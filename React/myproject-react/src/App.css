@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+/* .active{background-color: aquamarine!important;} */
+/* .active{background-color:  #198754!important;} */
+/* .active{background-color: rgba(25, 135, 84, 0.7)!important;} */
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+  /* color: #282c34; */
+  /* color: 198754; */
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles for the navigation */
+.custom-nav {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%; /* Ensure the nav takes full width */
+}
+
+.custom-nav-link {
+  color: #198754;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-nav-link:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.custom-nav-link.active {
+  background-color: rgba(25, 135, 84, 0.7);
+  color: white;
+}
+
+/* Custom styling for the user info */
+.user-info {
+  margin-left: auto; /* Pushes the user info to the right */
+  padding: 10px 20px;
+}
+
+.custom-nav-user {
+  font-weight: 500;
+  font-size: 1.1rem;
+  /* color: #333; */
+  padding: 12px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #198754; /* Keep the text color green on hover */
+
+}
+.custom-nav-user:hover {
+  background-color: #d6d8db;
+  color: #198754; /* Keep the text color green on hover */
+}
