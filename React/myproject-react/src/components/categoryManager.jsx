@@ -19,7 +19,6 @@ export const CategoryManager = () => {
             let y = (await getAllReactCategorys()).data
             setlistCategory(y)
         }
-
     }
     const deleteCategory = async(id)=>{
          let y=(await deleteReactCategory(id)).data
